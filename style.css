@@ -1,17 +1,63 @@
 body {
     font-family: Arial;
+    background-color: honeydew;
+    padding: 40px 0
 }
 
 h2 {
     font-size: 28px;
 }
+
 h1 {
     font-size: 36px;
 }
+
 span {
     color: red;
 }
+
 img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
 }
+
+section, 
+header {
+    padding: 10px 60px 20px 60px;
+    background-color: white;
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    margin-bottom: 15px;
+}
+
+.address-icon {
+    width: 16px;
+    height: 16px;
+    background-color: cornflowerblue;
+    margin-right: 10px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+
+.circle {
+    border-radius: 50%;
+}
+
+
+
+
+
