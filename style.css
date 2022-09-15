@@ -4,22 +4,22 @@ body {
     padding: 40px 0
 }
 
+h1 {
+    font-size: 36px;
+}
+
 h2 {
     font-size: 28px;
 }
 
-h1 {
-    font-size: 36px;
+h3 {
+    margin-top: 5px;
 }
 
 span {
     color: red;
 }
 
-img {
-    width: 180px;
-    height: 180px;
-}
 
 section, 
 header {
@@ -57,7 +57,40 @@ header li {
     border-radius: 50%;
 }
 
+.interests {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
+.profile-picture {
+    width: 180px;
+    height: 180px;
+}
 
+.hobbies {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.hobbies li {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
 
+.hobbies div {
+    margin-left: 20px;
+}
+
+.hobbies p {
+    color: gray;
+}
+
+p {
+    line-height: 1.5;
+}
