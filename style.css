@@ -6,6 +6,8 @@ body {
 
 h1 {
     font-size: 36px;
+    margin-bottom: 10px;
+    
 }
 
 h2 {
@@ -17,29 +19,33 @@ h3 {
 }
 
 span {
-    color: red;
+    color: gray;
 }
 
-
-section, 
-header {
-    padding: 10px 60px 20px 60px;
+.container {
     background-color: white;
     width: 960px;
     margin: 0 auto;
+    box-shadow: 0 0 20px gray;
+}
+
+section, 
+header {
+    padding: 10px 40px 20px 40px;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 60px;
 }
 
 header ul {
-    list-style: none;
+    list-style: none; 
 }
 
-header li {
+li {
     margin-bottom: 15px;
 }
 
@@ -52,6 +58,9 @@ header li {
     vertical-align: middle;
 }
 
+address ul {
+    padding: 0px;
+}
 
 .circle {
     border-radius: 50%;
@@ -104,6 +113,7 @@ p {
     margin-top: 20px;
     border-radius: 26px;
     transition: background-color 0.5s, color 0.5s;
+    box-shadow: 0 0 20px gray;
 }
 
 .cv-download-link:hover {
