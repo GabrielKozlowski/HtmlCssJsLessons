@@ -94,3 +94,29 @@ header li {
 p {
     line-height: 1.5;
 }
+
+.cv-download-link {
+    border: 2px solid cornflowerblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 26px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.cv-download-link:hover {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.cv-download-link:focus {
+    outline: none;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.cv-download-link:active {
+    text-decoration: underline;
+}
