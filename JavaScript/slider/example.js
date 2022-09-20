@@ -1,11 +1,30 @@
-let isBiggerThab10 = (number) => {
-    if(number > 10){
-        console.log('Liczba jest większa od 10');
+let circleLenght = (radius) => {
+    console.log(2*radius*3.14);
+};
+
+for(let i = 1; i <= 20; i++) {
+    circleLenght(i)
+}
+
+
+let divide = (number1, number2) => {
+    if(number1 === 0 || number2 === 0) {
+        console.log('Operacja niedozwolona');
     }
     else {
-        console.log('Liczba nie jest większa od 10');
+        console.log(number1 / number2);
     }
 };
 
-isBiggerThab10(11);
-isBiggerThab10(3);
+divide(10,2);
+divide(20,0);
+divide(0,20);
+
+
+let nOddNumbers = (n) => {
+    for(let i = 1; i <= n; i++) {
+        console.log(2*i - 1);
+    }
+}
+
+nOddNumbers(5)
