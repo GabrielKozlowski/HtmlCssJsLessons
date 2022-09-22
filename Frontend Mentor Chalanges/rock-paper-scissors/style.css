@@ -18,7 +18,11 @@ body {
 }
 
 header {
-    
+    border: solid 2px var(--color-border);
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 12px 24px;
 }
 
 hi span {
