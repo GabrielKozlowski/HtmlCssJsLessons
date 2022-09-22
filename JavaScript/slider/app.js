@@ -44,6 +44,5 @@ for(let i = 1; i <= 3; i++) {
 }
 
 
-
 arrowRight.addEventListener('click', showNextSlide)
 arrowLeft.addEventListener('click', showPreviousSlide)
