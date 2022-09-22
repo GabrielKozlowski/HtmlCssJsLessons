@@ -1,6 +1,6 @@
 :root {
     --color-main: #fff;
-    --color-text: hsl(229, 25%, 31%);
+    --color-points: hsl(229, 25%, 31%);
     --color-score: hsl(229, 64%, 46%);
     --color-border: hsl(217, 16%, 45%);
 }
@@ -13,18 +13,63 @@
 
 body {
     background: radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
     min-height: 100vh;
     min-width: 100vw;
+    padding: 48px;
 }
 
 header {
+    align-items: center;
     border: solid 2px var(--color-border);
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 600px;
     padding: 12px 24px;
 }
 
-hi span {
+h1 span {
     display: block;
+    line-height: 24px;
+}
+
+h1 {
+    color: var(--color-main);
+    
+}
+
+.score {
+    background: var(--color-main);
+    border-radius: 5px;
+    padding: 12px 42px;
+}
+
+.score span {
+    color: var(--color-score);
+}
+
+.points {
+    color: var(--color-points);
+    display: block;
+    font-size: 54px;
+    line-height: 42px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.options {
+    aspect-ratio: 313 / 278;
+    background-image: url(./images/bg-triangle.svg);
+    background-size: cover;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.options button {
+    position: absolute;
 }
