@@ -76,29 +76,87 @@ main {
     width: 50%;
 }
 
-.options .button {
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+.options .button {   
     position: absolute;
     width: 50%;
-    border: solid 5%;
 }
 
-.button--paper {
-    left: 0;
-    top: 0;
-    transform: translate(-50%, -50%);
+.button {
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px -8px 0px rgba(0, 0, 0,0.25);
+}
 
+.button img {
+    width: 50%;
+}
+
+.button__image-container {
+    align-items: center;
+    background-color: var(--color-main);
+    border-radius: 50%;
+    box-shadow: inset 0px 8px 0px rgba(0, 0, 0,0.15);
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+}
+
+
+.button--paper {
+    background: linear-gradient(var(--color-paper));
 }
 
 .button--scissors {
+    background: linear-gradient(var(--color-scissors));
+}
+
+.button--rock {
+    background: linear-gradient(var(--color-rock));
+}
+
+.options .button--paper {
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.options .button--scissors {
     right: 0;
     top: 0;
     transform: translate(50%, -50%);
 }
 
-.button--rock {
+.options .button--rock {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
+}
+
+.fight {
+    color: var(--color-main);
+    display: flex;
+}
+
+.fight.button {
+    width: 75%;
+}
+
+.pick {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+}
+
+.pick__title {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 100%;
 }
