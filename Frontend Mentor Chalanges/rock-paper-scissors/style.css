@@ -79,11 +79,11 @@ main {
 .options .button {   
     position: absolute;
     width: 50%;
+    cursor: pointer;
 }
 
 .button {
     aspect-ratio: 1 / 1;
-    cursor: pointer;
     align-items: center;
     border: none;
     border-radius: 50%;
@@ -143,11 +143,12 @@ main {
     display: flex;
 }
 
-.fight.button {
+.fight .button {
     width: 75%;
 }
 
 .pick {
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
     display: flex;
@@ -159,4 +160,11 @@ main {
     text-align: center;
     padding-bottom: 30px;
     width: 100%;
+}
+
+.pick__placeholder {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    background: rgba(0, 0, 0,0.15);
+    border-radius: 50%;
 }
