@@ -56,6 +56,7 @@ h1 {
 
 .points {
     color: var(--color-points);
+    text-align: center;
     display: block;
     font-size: 54px;
     line-height: 42px;
@@ -143,7 +144,7 @@ main {
     display: flex;
 }
 
-.fight .button {
+.pick__container--player {
     width: 75%;
 }
 
@@ -167,4 +168,8 @@ main {
     aspect-ratio: 1 / 1;
     background: rgba(0, 0, 0,0.15);
     border-radius: 50%;
+}
+
+.hidden {
+    display: none;
 }

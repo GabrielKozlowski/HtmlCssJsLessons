@@ -29,28 +29,30 @@
   </header>
   <main>
     <section class="options">
-      <button class="button button--paper">
+      <button class="button button--paper" data-pick="paper">
         <div class="button__image-container">
           <img src="./images/icon-paper.svg" alt="Paper">
         </div>
       </button>
-      <button class="button button--scissors">
+      <button class="button button--scissors" data-pick="scissors">
         <div class="button__image-container">
           <img src="./images/icon-scissors.svg" alt="Scissors">
         </div>
       </button>
-      <button class="button button--rock">
+      <button class="button button--rock" data-pick="rock">
         <div class="button__image-container">
           <img src="./images/icon-rock.svg" alt="Rock">
         </div>
       </button>
     </section>
-    <section class="fight">
+    <section class="fight hidden">
       <div class="pick">
         <span class="pick__title">YOU PICKED</span>
-        <div class="button button--paper">
-          <div class="button__image-container">
-            <img src="./images/icon-paper.svg" alt="Paper">
+        <div class="pick__container--player">
+          <div class="button button--paper">
+            <div class="button__image-container">
+              <img src="./images/icon-paper.svg" alt="Paper">
+            </div>
           </div>
         </div>
       </div>
