@@ -20,6 +20,7 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     min-height: 100vh;
     min-width: 100vw;
+    overflow: hidden;
     padding: 48px;
 }
 
@@ -65,19 +66,35 @@ h1 {
 main {
     margin: 0 auto;
     max-width: 600px;
-    padding: 120px 0;
+    min-height: 70vh;
+    padding: 160px 0;
+    position: relative;
 }
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
 
 .options {
     aspect-ratio: 313 / 278;
     background-image: url(./images/bg-triangle.svg);
     background-size: cover;
     margin: 0 auto;
-    position: relative;
     width: 50%;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-.options .button {   
+.options.slide-left {
+    opacity: 0;
+    transform: translate(-200%, -50%);
+}
+
+.options .button {
     position: absolute;
     width: 50%;
     cursor: pointer;
@@ -90,7 +107,7 @@ main {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    box-shadow: inset 0px -8px 0px rgba(0, 0, 0,0.25);
+    box-shadow: inset 0px -8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .button img {
@@ -101,7 +118,7 @@ main {
     align-items: center;
     background-color: var(--color-main);
     border-radius: 50%;
-    box-shadow: inset 0px 8px 0px rgba(0, 0, 0,0.15);
+    box-shadow: inset 0px 8px 0px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
     height: 80%;
@@ -140,11 +157,20 @@ main {
 }
 
 .fight {
+    align-items: center;
     color: var(--color-main);
     display: flex;
+    transform: translate(200%, -50%);
+    opacity: 0;
+    width: 100%;
 }
 
-.pick__container--player {
+.fight.slide-left {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.pick__container {
     width: 75%;
 }
 
@@ -153,23 +179,98 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     display: flex;
+    position: relative;
     width: 50%;
+    transform: translate(0, 0);
+    transition: transform 0.3s;
+}
+
+.pick--ai.moved {
+    transform: translate(25%, 0);
+}
+
+.pick--player.moved {
+    transform: translate(-25%, 0);
 }
 
 .pick__title {
+    bottom: 100%;
     display: block;
     text-align: center;
-    padding-bottom: 30px;
+    left: 50%;
+    position: absolute;
+    padding-bottom: 36px;
+    transform: translate(-50%, 0);
     width: 100%;
 }
 
 .pick__placeholder {
     width: 50%;
     aspect-ratio: 1 / 1;
-    background: rgba(0, 0, 0,0.15);
+    background: rgba(0, 0, 0, 0.15);
     border-radius: 50%;
 }
 
 .hidden {
     display: none;
 }
+
+.result__button {
+    border: none;
+    color:  hsl(349, 71%, 52%);
+    padding: 8px 24px;
+    border-radius: 3px;
+    
+}
+
+.result__text {
+    font-size:32px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    transform: scaleX(0) translate(-50%, -50%);
+    transition: transform 0.3s;
+}
+
+.result.shown {
+    transform: scaleX(1) translate(-50%, -50%);
+}
+
+@media screen and (max-width: 480px) {
+    .score {
+        padding: 8px 12px;
+    }
+
+    .fight {
+        flex-wrap: wrap;
+    }
+
+    .pick,
+    .pick.moved,
+    .result {
+        left: 0;
+        position: relative;
+        right: 0;
+        transform: translate(0, 0);
+    }
+
+    .result {
+        margin-top: 48px;
+        width: 100%;
+        transform: translate(0, 0) scaleX(0);
+    }
+
+    .result.shown {
+        transform: translate(0, 0) scaleX(1);
+    }
+};
