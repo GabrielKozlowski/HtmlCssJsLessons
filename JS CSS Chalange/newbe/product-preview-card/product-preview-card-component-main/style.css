@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 1440px;
+    display: flex;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.start {
+    display: flex;
+}
+
+.options {
+    display: flex;
+    width: 100%;
+}
