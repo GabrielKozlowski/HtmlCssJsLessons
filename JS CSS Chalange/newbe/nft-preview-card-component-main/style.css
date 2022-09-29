@@ -108,3 +108,14 @@ header {
     padding-right: 10px;
 }
 
+.text:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.user:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.foto:hover img {
+    filter: brightness(100);
+}
