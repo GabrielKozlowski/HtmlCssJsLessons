@@ -58,11 +58,10 @@ header {
 
 .eth img {
     width: 20px;
-
 }
 
 .timer img {
-    width: 30px;
+    width: 35px;
 }
 
 .eth {
@@ -75,6 +74,12 @@ header {
     display: flex;
     align-items: center;
 }
+
+.amound--eth,
+.amound--days {
+    padding-left: 10px;
+}
+
 
 .line {
     height: 1px;
@@ -102,3 +107,4 @@ header {
     padding-left: 35px;
     padding-right: 10px;
 }
+
