@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Outfit', sans-serif;
+}
+
+header {
+    width: 50%;
+    height: 1200px;
+    border: solid 2px;
+    border-radius: 5%;
+    max-width: 700px;
+    padding: 45px 45px;
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.text {
+    font-size: 40px;
+    padding: 40px 0;
+}
+
+.text,
+.user {
+    color: white;
+}
+
+.message {
+    font-size: 30px;
+}
+
+.message,
+.timer,
+.creation {
+    color: hsl(215, 51%, 70%);
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
