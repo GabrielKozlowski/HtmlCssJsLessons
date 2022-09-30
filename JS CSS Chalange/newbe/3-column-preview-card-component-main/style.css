@@ -6,8 +6,9 @@
 
 body {
     display: flex;
-    margin: 10px;
+    margin: 10px 0 0 10px;
     font-size: 15px;
+    filter: blur(1px);
 }
 
 img {
@@ -40,16 +41,10 @@ button {
 }
 
 button span {
-    background-color: hsl(31, 77%, 52%);
-    font-size: 25px;
-
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    font-size: 22px;
 }
 
-.buttons {
-    margin-top: 40px;
-}
+
 
 .position {
     margin: 15%;
@@ -57,20 +52,23 @@ button span {
 
 .text {
     display: block;
-    font-size: 18px;
+    font-size: 23px;
     line-height: 36px;
 }
 
 .text1 {
-    padding-right: 10px;
+    max-width: 95%;
+    padding-bottom: 85px;
 }
 
 .text2 {
-    padding-right: 10px;
+    max-width: 95%;
+    padding-bottom: 74px;
 }
 
 .text3 {
-    padding-right: 10px;
+    max-width: 98%;
+    padding-bottom: 78px;
 }
 
 .pillar1 {
@@ -87,4 +85,22 @@ button span {
     background-color: hsl(179, 100%, 13%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.button1 span{
+    background-color: hsl(31, 77%, 52%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.button2 span{
+    background-color: hsl(184, 100%, 22%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.button3 span{
+    background-color: hsl(179, 100%, 13%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
