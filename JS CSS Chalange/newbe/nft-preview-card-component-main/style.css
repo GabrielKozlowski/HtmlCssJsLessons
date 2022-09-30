@@ -23,9 +23,33 @@ header {
     margin-top: 20%;
 }
 
-.foto img {
+.foto {
+    position: relative;
     width: 100%;
     border-radius: 3%;
+}
+.container1 {
+    position: relative;
+    width: 100%;
+}
+.container3 {
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    bottom: 40%;
+    opacity: 0;
+    
+}
+
+.container2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    border-radius: 3%
 }
 
 .text {
@@ -116,6 +140,10 @@ header {
     color: hsl(178, 100%, 50%);
 }
 
-.foto:hover img {
-    filter: brightness(100);
+.foto:hover .container2 {
+    opacity: 0.5;
+}
+
+.foto:hover .container3 {
+    opacity: 1;
 }
