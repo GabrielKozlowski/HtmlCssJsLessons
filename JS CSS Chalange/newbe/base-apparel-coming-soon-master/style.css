@@ -1,0 +1,78 @@
+:root {
+    --color-1: hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+    --color-2: hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+    --color-3: hsl(0, 6%, 24%);
+    --color-4: hsl(0, 36%, 70%);
+    --color-5: hsl(0, 93%, 68%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    
+}
+
+main {
+    display: flex;
+    max-width: 1440px;
+    max-height: 800px;  
+
+}
+
+.left--site {
+    background: linear-gradient(var(--color-1));
+    width: 65%;
+    height: auto;
+    padding: 5% 10%;
+
+}
+
+
+.logo {
+    width: 35%;
+}
+
+.info {
+    font-size: 50px;
+    padding-top: 25%;
+}
+
+.line1 {
+    display: block;
+    color: var(--color-4);
+}
+.line2 {
+    display: block;
+    padding-right: 10%;
+}
+.line3 {
+    padding-bottom: 15%;
+
+}
+
+.text {
+    font-size: 12px;
+    padding-top: 10%;
+}
+
+.message {
+    font-size: 10px;
+    color: var(--color-4);
+}
+
+
+.email--space {
+    font-size: 10px;
+}
+
+
+.right--site {
+    aspect-ratio: 610 / 800;
+    width: 45%;
+    height: auto;
+}
