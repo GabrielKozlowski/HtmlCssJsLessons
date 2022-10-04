@@ -1,9 +1,9 @@
 :root {
     --color-1: hsl(0, 0%, 100%), hsl(0, 100%, 98%);
-    --color-2: hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+    --color-2: hsl(0, 18%, 74%);
     --color-3: hsl(0, 6%, 24%);
-    --color-4: hsl(0, 36%, 70%);
-    --color-5: hsl(0, 93%, 68%);
+    --color-4: hsl(0, 32%, 40%);
+    --color-5: hsl(0, 63%, 48%);
 }
 
 * {
@@ -13,8 +13,9 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body {
-    
+body {  
+    background-color: var(--color-3);
+    margin: 5%;
 }
 
 main {
@@ -28,17 +29,17 @@ main {
     background: linear-gradient(var(--color-1));
     width: 65%;
     height: auto;
-    padding: 5% 10%;
+    padding: 4% 10%;
 
 }
 
 
 .logo {
-    width: 35%;
+    width: 32%;
 }
 
 .info {
-    font-size: 50px;
+    font-size: 70px;
     padding-top: 25%;
 }
 
@@ -51,25 +52,44 @@ main {
     padding-right: 10%;
 }
 .line3 {
-    padding-bottom: 15%;
+    padding-bottom: 5%;
 
 }
 
 .text {
-    font-size: 12px;
-    padding-top: 10%;
+    display: block;
+    font-size: 16px;
+    padding-right: 18%;
+    line-height: 25px;
+    color: var(--color-2);
 }
 
 .message {
-    font-size: 10px;
+    font-size: 15px;
     color: var(--color-4);
+    padding-bottom: 40px;
 }
 
 
 .email--space {
-    font-size: 10px;
+    font-size: 16px;
+    padding-left: 5%;
+    color: var(--color-4);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    height: 60px;
+    border: solid;
+    border-radius: 35px;
+    color: var(--color-5);
+    /* background-color: var(--color-5); */
+    background: linear-gradient(90deg,#772e2e, #830101);
+    /* background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); */
+}
 
 .right--site {
     aspect-ratio: 610 / 800;
@@ -78,9 +98,12 @@ main {
 }
 
 .email--address {
-    border: solid;
-    border-radius: 10px;
-    border-color: var(--color-1);
+    width: 80%;
+    height: 60px;
+    border: solid 1px;
+    border-radius: 35px;
+    border-color: var(--color-2);
+    opacity: 0.2;
     display: flex;
     align-items: center;
     justify-content: space-between;
