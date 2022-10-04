@@ -5,3 +5,36 @@
 }
 
 
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    margin: 10%;
+    display: inline-flex;
+    border-radius: 30px;
+}
+
+img {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.left--site {
+    background-color: hsl(244, 38%, 16%);
+    max-width: 540px;
+    max-height: 446px;
+    height: auto;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.right--site {
+    width: 50%;
+}
+
+.h1 {
+    font-size: 30px;
+    color: white;
+}
