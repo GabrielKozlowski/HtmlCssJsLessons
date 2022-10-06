@@ -17,8 +17,10 @@ main {
 }
 
 img {
+    position: absolute;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
+    opacity: 0.5;
 }
 
 .purple {
@@ -28,7 +30,7 @@ img {
 
 .left--site {
     background-color: hsl(244, 38%, 16%);
-    max-width: 50%;
+    width: 50%;
     max-height: 446px;
     height: auto;
     border-bottom-left-radius: 8px;
@@ -41,7 +43,7 @@ img {
 }
 
 .h1 {
-    font-size: 38px; 
+    font-size: 36px; 
     padding-bottom: 20px;
 }
 
@@ -64,19 +66,19 @@ img {
 .a1 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     padding-top: 85px;
 }
 
 .a1 .values {
     font-family: 'Inter', sans-serif;
     font-size: 27px;
+    padding-bottom: 6px;
 }
 
 .a1 .stat {
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 12px;
-    padding-top: 5px;
+    font-size: 14px;
     color: hsla(0, 0%, 100%, 0.5);
 
 
@@ -84,4 +86,14 @@ img {
 }
 .values {
     display: block;
+}
+
+.cointener {
+    position: absolute;
+    width: 540px;
+    height: 446px;
+    background-color: hsl(277, 84%, 32%);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+
 }
