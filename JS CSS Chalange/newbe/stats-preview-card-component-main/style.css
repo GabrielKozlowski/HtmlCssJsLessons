@@ -7,8 +7,7 @@
 
 body {
     background-color: hsl(233, 47%, 7%);
-    font-family: 'Inter', sans-serif;
-    font-family: 'Lexend Deca', sans-serif;
+    width: 1440px;
 }
 main {
     margin: 10%;
@@ -23,17 +22,18 @@ img {
 }
 
 .purple {
+    font-family: 'Inter', sans-serif;
     color: hsl(277, 64%, 61%);
 }
 
 .left--site {
     background-color: hsl(244, 38%, 16%);
-    max-width: 540px;
+    max-width: 50%;
     max-height: 446px;
     height: auto;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
-    padding: 70px 70px 70px 70px;
+    padding: 70px 100px 70px 70px;
 }
 
 .right--site {
@@ -45,4 +45,43 @@ img {
     padding-bottom: 20px;
 }
 
+.get, 
+.get--continue {
+    font-family: 'Inter', sans-serif;
+    word-spacing: 0px;
+}
 
+
+.text {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.5);
+    
+
+}
+
+.a1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 85px;
+}
+
+.a1 .values {
+    font-family: 'Inter', sans-serif;
+    font-size: 27px;
+}
+
+.a1 .stat {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    padding-top: 5px;
+    color: hsla(0, 0%, 100%, 0.5);
+
+
+
+}
+.values {
+    display: block;
+}
