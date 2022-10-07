@@ -97,3 +97,24 @@ img {
     color: var(--Very-dark-blue);
 }
 
+.time--ago {
+    display: block;
+    color: var(--Light-grayish-blue-2);
+}
+
+.red--dot {
+    font-size: 12px;
+}
+
+.comment {
+    background-color: var(--Very-light-grayish-blue);  
+    border-radius: 10px; 
+    margin-left: 150px;
+    margin-right: 45px;
+    margin-top: 0px;
+    padding: 35px;
+}
+
+.rizky--hasanuddin {
+    margin: 0px;
+}
