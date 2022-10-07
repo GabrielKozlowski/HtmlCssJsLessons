@@ -1,0 +1,99 @@
+:root {
+
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+body {
+    background-color: var(--Very-light-grayish-blue);
+    width: 1440px;
+    height: auto;
+    padding: 30px;
+}
+
+main,
+header {
+    background-color: var(--White);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+main {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 0px 60px 30px 60px;
+}
+
+header h1 {
+    font-size: 42px;
+    padding-right: 20px;
+}
+
+header .unread--value {
+    font-size: 28px;
+    color: white;
+    width: 54px;
+    height: 44px;
+    border: solid 0px;
+    background: var(--Blue);
+    border-radius: 10px;
+    padding-left: 18px;
+    padding-top: 3px;
+}
+
+header button {
+    font-size: 30px;
+    background: var(--White);
+    margin-left: auto;
+    border: var(--White);
+    margin-right: 0px;
+}
+img {
+    margin: 14px 30px 14px 20px;
+}
+
+.mark--webber,
+.angela--gray,
+.jacob--tompson {
+    background-color: var(--Very-light-grayish-blue);  
+    border-radius: 10px; 
+}
+
+.user,
+.comment {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    padding: 14px;
+}
+
+.user--name {
+    font-weight: bold;
+    color: var(--Very-dark-blue);
+}
+
