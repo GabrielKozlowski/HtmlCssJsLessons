@@ -71,15 +71,24 @@ header button {
     border: var(--White);
     margin-right: 0px;
 }
+
 img {
     margin: 14px 30px 14px 20px;
     width: 75px;
 }
 
+#mark__all {
+    cursor: pointer;
+}
+
+#mark__all:hover {
+    color: var(--Blue);    
+}
+
 .mark--webber,
 .angela--gray,
 .jacob--tompson {
-    background-color: var(--Very-light-grayish-blue);  
+    background-color: var(--Light-grayish-blue-1);  
     border-radius: 10px; 
 }
 
@@ -96,10 +105,20 @@ img {
 .user--name {
     font-weight: bold;
     color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
+.user--name:hover {
+    color: var(--Blue);
 }
 
 .things {
     font-weight: bold;
+    cursor: pointer;
+}
+
+.things:hover {
+    color: var(--Blue);
 }
 
 .club {
@@ -108,11 +127,16 @@ img {
 
 .time--ago {
     display: block;
-    color: var(--Light-grayish-blue-2);
+    color: var(--Grayish-blue);
 }
 
-.red--dot {
-    font-size: 12px;
+.red--dot::after {
+    content: "";
+    background-color: var(--Red);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .comment {
@@ -120,6 +144,11 @@ img {
     border-radius: 10px; 
     margin: 0px 45px 50px 150px;
     padding: 25px 35px;
+    cursor: pointer;
+}
+
+.comment:hover {
+    background-color: var(--Light-grayish-blue-1);
 }
 
 .rizky--hasanuddin {
