@@ -73,6 +73,7 @@ header button {
 }
 img {
     margin: 14px 30px 14px 20px;
+    width: 75px;
 }
 
 .mark--webber,
@@ -97,6 +98,14 @@ img {
     color: var(--Very-dark-blue);
 }
 
+.things {
+    font-weight: bold;
+}
+
+.club {
+    color: var(--Blue);
+}
+
 .time--ago {
     display: block;
     color: var(--Light-grayish-blue-2);
@@ -107,14 +116,17 @@ img {
 }
 
 .comment {
-    background-color: var(--Very-light-grayish-blue);  
+    border: solid 4px var(--Light-grayish-blue-1);
     border-radius: 10px; 
-    margin-left: 150px;
-    margin-right: 45px;
-    margin-top: 0px;
-    padding: 35px;
+    margin: 0px 45px 50px 150px;
+    padding: 25px 35px;
 }
 
 .rizky--hasanuddin {
     margin: 0px;
+}
+
+.chess--foto {
+    margin-right: 30px;
+    margin-left: auto;
 }
