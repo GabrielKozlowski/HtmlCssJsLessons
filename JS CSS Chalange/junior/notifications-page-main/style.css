@@ -57,7 +57,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 30px;
-    columns: var(--White);
+    color: var(--White);
     font-weight: 800;
     border-radius: .5rem;
 }
@@ -121,101 +121,29 @@ strong:hover {
     border-radius: 50%;
 }
 
-
-
-
-
-
-header button {
-    font-size: 30px;
-    background: var(--White);
-    margin-left: auto;
-    border: var(--White);
-    margin-right: 0px;
-}
-
-img {
-    margin: 14px 30px 14px 20px;
-    width: 75px;
-}
-
-#mark__all {
-    cursor: pointer;
-}
-
-
-
-.mark--webber,
-.angela--gray,
-.jacob--tompson {
-    background-color: var(--Light-grayish-blue-1);  
-    border-radius: 10px; 
-}
-
-.user,
-.comment {
+.message_card {
     display: flex;
     align-items: center;
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 10px;
-    padding: 14px;
 }
 
-.user--name {
-    font-weight: bold;
-    color: var(--Very-dark-blue);
+.message {
+    padding: 1rem;
+    border: 1px solid var(--Light-grayish-blue-2);
+    border-radius: .3rem;
     cursor: pointer;
+    margin: 0 0 0 5rem;
 }
 
-.user--name:hover {
-    color: var(--Blue);
-}
-
-.things {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.things:hover {
-    color: var(--Blue);
-}
-
-.club {
-    color: var(--Blue);
-}
-
-.time--ago {
-    display: block;
-    color: var(--Grayish-blue);
-}
-
-.red--dot::after {
-    content: "";
-    background-color: var(--Red);
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    border-radius: 50%;
-}
-
-.comment {
-    border: solid 4px var(--Light-grayish-blue-1);
-    border-radius: 10px; 
-    margin: 0px 45px 50px 150px;
-    padding: 25px 35px;
-    cursor: pointer;
-}
-
-.comment:hover {
+.message:hover {
     background-color: var(--Light-grayish-blue-1);
 }
 
-.rizky--hasanuddin {
-    margin: 0px;
+.chess_img{
+    margin-left: auto;
 }
 
-.chess--foto {
-    margin-right: 30px;
-    margin-left: auto;
+@media screen and (max-width:550px) {
+    .container{
+        margin: 0;
+    }
 }
