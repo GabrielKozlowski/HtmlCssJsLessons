@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css"/>
   <title>Frontend Mentor | Expenses chart component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,29 +15,54 @@
   </style>
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header class="balane">
+    <p class="my_balance">
+      My balance <strong class="many">$921.48</strong>
+    </p>
+    <img rel="icon" class="logo" src="./images/logo.svg"></img>
+  </header>
+  <main>
+    <p class="info">
+      Speding - Last 7 days
+    </p>
+    <div class="conteiner">
+      <div class="column monday">
+        <p class="chart"></p>
+        <p class="day">mon</p>
+      </div>
+      <div class="column tuesday">
+        <p class="chart"></p>
+        <p class="day">tue</p>
+      </div>
+      <div class="column wednesday">
+        <p class="chart"></p>
+        <p class="day">wed</p>
+      </div>
+      <div class="column thursday">
+        <p class="chart"></p>
+        <p class="day">thu</p>
+      </div>
+      <div class="column friday">
+        <p class="chart"></p>
+        <p class="day">fri</p>
+      </div>
+      <div class="column saturday">
+        <p class="chart"></p>
+        <p class="day">sat</p>
+      </div>
+      <div class="column sunday">
+        <p class="chart"></p>
+        <p class="day">sun</p>
+      </div>
+    </div>
+    <p class="line"></p>
+    <p>Total this month</p>
+    <div class="summary">
+      <p class="total">$478.33</p>
+      <p class="last_month">
+        <strong class="percent">+2.4%</strong> from last month
+      </p>
+    </div>
+  </main>
 </body>
 </html>
