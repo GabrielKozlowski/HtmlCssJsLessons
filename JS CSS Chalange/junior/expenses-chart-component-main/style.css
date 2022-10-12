@@ -69,25 +69,41 @@ main {
 .conteiner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 70px;
+    align-items: end;
+    margin-top: 5px;
 }
 
 .chart {
-    /* height: 80px; */
     width: 40px;
     border: none;
     border-radius: .3rem;
     background-color: var(--Soft-red);
-    padding: 50px 0 10px 0;
 }
 .column {
     text-align-last: center;
+}
+
+.value {
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: .3rem;
+    background-color: black;
+    color: #fff;
+    padding: 4px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    opacity: 0;
 }
 .day {
     font-size: 12px;
     margin-top: 5px;
 }
+
+.wednesday .chart {
+    background-color: var(--Cyan);
+}
+
 
 .line {
     height: 1px;
@@ -120,4 +136,44 @@ main {
 
 .percent {
     padding-left: 60%;
+}
+
+
+.chart:hover {
+    opacity: .5;
+}
+
+.monday .chart {
+    height: 35.90px;
+    cursor: pointer;
+}
+
+.tuesday .chart {
+    height: 69.8px;
+    cursor: pointer;
+}
+
+.wednesday .chart {
+    height: 104.7px;
+    cursor: pointer;
+}
+
+.thursday .chart {
+    height: 62.1px;
+    cursor: pointer;
+}
+
+.friday .chart {
+    height: 46.8px;
+    cursor: pointer;
+}
+
+.saturday .chart {
+    height: 86.6px;
+    cursor: pointer;
+}
+
+.sunday .chart {
+    height: 51px;
+    cursor: pointer;
 }
