@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 ::root
 {
     --Linear-gradient : hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
@@ -20,24 +21,119 @@ main
 {
     display: flex;
     height: 100vh;
+    width: 1440px;
+    font-family: 'Space Grotesk', sans-serif;
 }
+
 
 .left_site
 {
-    width: 33%;
+    min-width: 33.45%;
+    max-height: 900px;
 }
 
 .background
 {
-    position: relative;
+    position: absolute;
 }
 
 
+.front_of_the_card 
+{
+    position: relative;
+    left: 10rem;
+    top: 12rem;
+
+}
 
 
+.back_of_the_card
+{
+    position: relative;
+    left: 15rem;
+    top: 15rem;
+}
 
+
+.front_card p 
+{
+    position: absolute;
+    color: white;
+}
+
+.logo
+{
+    position: absolute;
+    top: 14rem;
+    left: 12rem;
+}
+
+.number_on_card
+{
+    top: 21rem;
+    left: 12.5rem;
+    font-size: 2rem;
+}
+
+.name_on_card
+{
+    top: 25rem;
+    left: 12.5rem;
+    font-size: 1rem;
+}
+
+.date_on_card
+{
+    top: 25rem;
+    left: 32rem;
+    font-size: 1rem;
+}
+
+.cvc_on_card
+{
+    position: absolute;
+    top: 37.5rem;
+    left: 37rem;
+    font-size: 1rem;
+    color: white;
+}
 
 .right_site
 {
-    width: 66%;
+    min-width: 66.55%;
+    max-height: 900px;
+    margin: 25% 0 0 25%;
+}
+
+.placeholder1
+{
+    font-size: 20px;
+    width: 40%;
+    height: 50px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-left: 20px;
+    opacity: 0.2;
+}
+
+.placeholder2 
+{
+    width: 10%;
+}
+
+.placeholder3
+{
+    width: 20%;
+}
+
+.grup
+{
+    display: flex;
+}
+
+.right_site p 
+{
+    font-size: 15px;
+    padding: 30px 0 8px 0;
 }
