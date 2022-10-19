@@ -8,6 +8,7 @@ const cvc = document.getElementById("cvc");
 const numberCard = document.getElementById("numberCard");
 const nameCard = document.getElementById("nameCard");
 const dateCard = document.getElementById("dateCard");
+const cvCard = document.getElementById("cvcCard");
 
 const button = document.getElementById("button")
 
@@ -33,6 +34,7 @@ button.addEventListener("click", function () {
     nameCard.innerHTML = valueNames;
     numberCard.innerHTML = firstFour + " " + secoundFour + " " + thirdFour + " " + fourthFour;
     dateCard.innerHTML = valueMonth + "/" + valueYear;
+    cvCard.innerHTML = valueCvc;
     
 
     const namCard = true
@@ -95,3 +97,13 @@ button.addEventListener("click", function () {
     }
 });
 
+const confirm = document.querySelector(".continue");
+
+confirm.addEventListener("click", function() {
+    document.getElementsByClassName('complete_state')[0].style.display = "none";
+    document.getElementsByClassName('right_site')[0].style.display = "block";
+
+    
+    document.getElementById("numberCard").reset();
+    
+})

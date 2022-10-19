@@ -68,6 +68,13 @@ main
     left: 12rem;
 }
 
+
+.system
+{
+    width: 100%;
+    margin: 25% 0 0 35%;
+}
+
 .number_on_card
 {
     top: 21rem;
@@ -100,9 +107,10 @@ main
 
 .right_site
 {
-    min-width: 65.8%;
-    max-height: 900px;
-    margin: 17% 0 0 24%;
+    position: absolute;
+    width: 65.5%;
+    height: 900px;
+    left: 33.3%;
 }
 
 .placeholder1
@@ -167,6 +175,7 @@ main
     margin-top: 38px;
     font-size: 18px;
     cursor: pointer;
+    letter-spacing: 2px;
 }
 
 .errors
@@ -219,6 +228,9 @@ main
     height: 50px;
     border-radius: 8px;
     margin-top: 40px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 
 .info_complete
