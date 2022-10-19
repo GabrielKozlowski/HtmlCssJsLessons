@@ -113,35 +113,41 @@ main
     border: solid 1px gray;
     border-radius: 10px;
     padding-top: 2px;
-    padding-left: 20px;
+    padding-left: 15px;
     opacity: 0.2;
 }
 
 .placeholder2 
 {
-    width: 16%;
+    width: 30%;
     margin-right: 5px;
 }
 
 .placeholder3
 {
     width: 85.5%;
+    margin-left: 3%;
 }
 
 .date
 {
-    margin-right: -34%;
-}
-.grup
-{
+    width: 21%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
+
 
 .right_site p 
 {
     font-size: 15px;
     padding: 26px 0 8px 0;
+}
+
+.three_input
+{
+    display: flex;
+    max-width: 40.5%;
 }
 
 .card_cvc 
@@ -160,4 +166,31 @@ main
     height: 50px;
     margin-top: 38px;
     font-size: 18px;
+    cursor: pointer;
 }
+
+.errors
+{
+    display: flex;
+    justify-content: space-between;
+    width: 31%;
+    color: white
+}
+
+.cvc_error
+{
+    margin-left: 10px;
+}
+
+
+.border_red
+{
+    border: 3px solid red;
+}
+
+.error_text_red
+{
+    color: red;
+    margin-top: 1%;
+}
+
