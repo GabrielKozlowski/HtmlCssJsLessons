@@ -27,15 +27,46 @@
 main
 {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: auto;
-    width: 85%;
     min-height: 100vh;
     margin-top: 1rem;
     background: var(--Very-dark-blue);
 }
+samp
+{
+    font-size: 1.5rem;
+    color: var(--Pale-Blue);
+    opacity: 0.5;
+}
 
+h3
+{
+    display:table-caption;
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+}
+
+h2
+{
+    font-size: 6rem;
+    font-weight: 50;
+    color: white;
+    margin-top: 2.5rem;
+}
+
+button
+{    
+    padding-bottom: 20px;
+    color: var(--Desaturated-blue);
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
 p
 {
     color: white;
@@ -43,12 +74,12 @@ p
 }
 .conteners
 {
-    min-width: 375px;
+    width: 23.5rem;
 }
 
 .conteners2
 {
-    min-width: 1125px;
+    width: 23.5rem;
 }
 .contener
 {
@@ -95,10 +126,17 @@ p
     padding: 3rem;
     position: absolute;
     margin-top: -3.2rem;
+    cursor: pointer;
 }
+
+.space:hover{
+    background-color: hsl(237, 29%, 43%);
+}
+
+
 .border_top
 {
-    width: 60%;
+    width: 100%;
     border-top: solid .5rem var(--Very-dark-blue);
     position: absolute;
     margin-top: -0.5rem;
@@ -106,7 +144,7 @@ p
 
 .border_bottom
 {
-    width: 60%;
+    width: 100%;
     border-top: solid 2rem var(--Very-dark-blue);
     position: absolute;
     margin-top: 1rem;
@@ -121,13 +159,19 @@ p
 }
 #exercise
 {
-    margin-top: -1rem;
+    margin-top: -1.2rem;
 }
 
 #social
 {
-    margin-top: -5.5rem;
+    margin-top: -4.6rem;
 }
+
+#selfCare
+{
+    margin-top: -1.7rem;
+}
+
 
 .logo
 {
@@ -137,37 +181,40 @@ p
     border-radius: 50%;
     margin-bottom: 18%;
 }
-
-samp
+#logo_social
 {
-    font-size: 1.5rem;
-    color: var(--Pale-Blue);
+    margin-top: -1.5rem;
 }
-
-h3
+#logo_hart
 {
-    display:table-caption;
-    font-size: 4rem;
-    font-weight: 100;
-    color: white;
+    margin-top: -2rem;
+    width: 30%;
+}
+#logo_exercise
+{
+    margin-top: -0.2rem;
 }
 
-button
-{    
-    padding-bottom: 20px;
-    color: var(--Desaturated-blue);
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding-bottom: 30px;
-}
 
 .daily
 {
     margin-top: 11rem;
 }
+
+
+.daily:hover,
+.weekly:hover,
+.monthly:hover
+{
+    color: white;
+}
+
+.dots:hover
+{
+    width: 28px;
+    color: aliceblue;
+}
+
 
 .firstLine
 {
@@ -208,4 +255,64 @@ button
 #contExercise
 {
     background-color:var(--Lime-green);
+}
+
+@media screen and (max-width: 1820px) {
+    main,
+    .top,
+    .bottom 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteners
+    {
+        width: 45rem;
+        height: 22rem;
+        margin-bottom: 6rem;
+    }
+    .contener
+    {
+        width: 45rem;
+        margin-left: 0; 
+        margin-top: 3rem;
+    }
+    .space
+    {
+        height: 17rem;
+        width: 45rem;
+    }
+    .space1
+    {
+        height: 28rem;
+        margin-bottom: 3rem;
+    }
+    .bottom
+    {
+        margin-top: 0;
+    }
+    .logos
+    {
+        width: 9rem;
+        margin-left: 34rem;
+    }
+    #contUser
+    {
+        height: 17rem;
+    }
+    #exercise 
+    {
+        margin-top: -0.6rem;
+    }
+    #social 
+    {
+        margin-top: -5.2rem;
+    }
+    #logo_hart 
+    {
+        width: 22%;
+    }
+    #selfCare {
+        margin-top: -2.6rem;
+    }
 }
