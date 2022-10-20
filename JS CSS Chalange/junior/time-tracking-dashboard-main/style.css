@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root 
+{
+    --Blue: hsl(246, 80%, 60%);
+    --Light-orange: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    min-height: 100vh;
+    margin-top: 1rem;
+    background: var(--Very-dark-blue);
+}
+
+p
+{
+    color: white;
+    font-size: 2rem;
+}
+.conteners
+{
+    min-width: 375px;
+}
+
+.conteners2
+{
+    min-width: 1125px;
+}
+.contener
+{
+    height: 22.5rem;
+    min-width: 375px;
+    border: none;
+    border-radius: 2.2rem;
+    margin-left: 3rem;
+}
+
+
+#contWork
+{
+    background-color:var(--Light-orange);
+}
+
+#contPlay
+{
+    background-color:var(--Soft-blue);
+}
+
+#contStudy
+{
+    background-color:var(--Light-red);
+}
+
+#contSelfCare
+{
+    background-color:var(--Soft-orange);
+}
+
+#contSocial
+{
+    background-color:var(--Violet);
+}
+#contExercise
+{
+    background-color:var(--Lime-green);
+}
