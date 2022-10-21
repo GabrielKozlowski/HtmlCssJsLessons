@@ -7,12 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css"/>
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
@@ -43,8 +37,12 @@
               <img id="workDots" class="dots" src="./images/icon-ellipsis.svg"/>
             </div>
             <div class="center">
-              <h2 id="workHours" class="time">5hrs</h2>
-              <samp id="lastWeekWork" class="previous">Yesterday 7hrs</samp>
+              <h2 id="workDailyHours" class="time">5hrs</h2>
+              <h2 id="workWeeklyHours" class="time">32hrs</h2>
+              <h2 id="workMonthlyHours" class="time">103hrs</h2>
+              <samp id="lastDayWork" class="previous">Yesterday - 7hrs</samp>
+              <samp id="lastWeekWork" class="previous">Last Week - 36hrs</samp>
+              <samp id="lastMonthWork" class="previous">Last Month - 128hrs</samp>
             </div>           
           </div>
         </div>
@@ -56,8 +54,12 @@
               <img id="playDots" class="dots" src="./images/icon-ellipsis.svg">
             </div>
             <div class="center">
-              <h2 id="playHours" class="time">1hr</h2>
-              <samp id="lastWeekPlay" class="previous">Yesterday 2hrs</samp>  
+              <h2 id="playDailyHours" class="time">1hr</h2>
+              <h2 id="playWeeklyHours" class="time">10hrs</h2>
+              <h2 id="playMonthlyHours" class="time">23hrs</h2>
+              <samp id="lastDayPlay" class="previous">Yesterday - 2hrs</samp>
+              <samp id="lastWeekPlay" class="previous">Last Week - 8hrs</samp>
+              <samp id="lastMonthPlay" class="previous">Last Month - 29hrs</samp> 
             </div>
           </div>
         </div>
@@ -69,8 +71,12 @@
               <img id="studyDots" class="dots" src="./images/icon-ellipsis.svg">
             </div>
             <div class="center">
-              <h2 id="studyHours" class="time">0hrs</h2>
-              <samp id="lastWeekStudy" class="previous">Yesterday 1hr</samp>
+              <h2 id="studyDailyHours" class="time">0hrs</h2>
+              <h2 id="studyWeeklyHours" class="time">4hrs</h2>
+              <h2 id="studyMonthlyHours" class="time">13hrs</h2>
+              <samp id="lastDayStudy" class="previous">Yesterday - 1hr</samp>
+              <samp id="lastWeekStudy" class="previous">Last Week - 7hrs</samp>
+              <samp id="lastMonthStudy" class="previous">Last Month - 19hrs</samp>
             </div> 
           </div>
         </div>
@@ -87,8 +93,12 @@
               <img id="exerciseDots" class="dots" src="./images/icon-ellipsis.svg">
             </div>
             <div class="center">
-              <h2 id="exerciseHours" class="time">1hr</h2>
-              <samp id="lastWeekExercise" class="previous">Yesterday 1hr</samp> 
+              <h2 id="exerciseDailyHours" class="time">1hr</h2>
+              <h2 id="exerciseWeeklyHours" class="time">4hrs</h2>
+              <h2 id="exerciseMonthlyHours" class="time">11hrs</h2>
+              <samp id="lastDayExercise" class="previous">Yesterday - 1hr</samp>
+              <samp id="lastWeekExercise" class="previous">Last Week - 5hrs</samp>
+              <samp id="lastMonthExercise" class="previous">Last Month - 18hrs</samp> 
             </div> 
           </div>
         </div>
@@ -100,8 +110,12 @@
               <img id="socialDots" class="dots" src="./images/icon-ellipsis.svg">
             </div>
             <div class="center">
-              <h2 id="socialHours" class="time">1hr</h2>
-              <samp id="lastWeekSocial" class="previous">Yesterday 3hrs</samp>
+              <h2 id="socialDailyHours" class="time">1hr</h2>
+              <h2 id="socialWeeklyHours" class="time">5hrs</h2>
+              <h2 id="socialMonthlyHours" class="time">21hrs</h2>
+              <samp id="lastDaySocial" class="previous">Yesterday - 3hrs</samp>
+              <samp id="lastWeekSocial" class="previous">Last Week - 10hrs</samp>
+              <samp id="lastMonthSocial" class="previous">Last Month - 23hrs</samp>
             </div>   
           </div>
         </div>
@@ -113,8 +127,12 @@
               <img id="selfCareDots" class="dots" src="./images/icon-ellipsis.svg">
             </div>
             <div class="center">
-              <h2 id="selfCareHours" class="time">0hrs</h2>
-              <samp id="lastWeekSelfCare" class="previous">Yesterday 1hr</samp> 
+              <h2 id="selfCareDailyHours" class="time">0hrs</h2>
+              <h2 id="selfCareWeeklyHours" class="time">2hrs</h2>
+              <h2 id="selfCareMonthlyHours" class="time">7hrs</h2>
+              <samp id="lastDaySelfeCare" class="previous">Yesterday - 1hr</samp>
+              <samp id="lastWeekSelfeCare" class="previous">Last Week - 2hrs</samp>
+              <samp id="lastMonthSelfeCare" class="previous">Last Month - 11hrs</samp> 
             </div> 
           </div>
         </div>

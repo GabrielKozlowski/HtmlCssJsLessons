@@ -143,35 +143,35 @@ button
 }
 #borderWork
 {
-    left: 20.5%;
+    left: 26.5rem;
 }
 #borderPlay
 {
-    left: 41.5%;
+    left: 53rem;
 }
 #borderStudy
 {
-    left: 62%;
+    left: 79.5rem;
 }
 
 .border_bottom
 {
-    width: 22.5rem;
+    width: 23.5rem;
     border-top: solid 2rem var(--Very-dark-blue);
     position: absolute;
     margin-top: 1rem;
 }
 #borderExercise
 {
-    left: 21%;
+    left: 26.5rem;
 }
 #borderSocial
 {
-    left: 42%;
+    left: 53rem;
 }
 #borderSelfCarre
 {
-    left: 62.5%;
+    left: 79.5rem;
 }
 
 #contUser
@@ -406,40 +406,41 @@ button
     }
     .border_top
     {
-        width: 45rem;
-        border-top: solid 1rem;
+        width: 20rem;
+        border-top: solid 1rem var(--Very-dark-blue);
     }
     #borderWork
     {
         top: 34.9%;
-        left: 20%;
+        left: 50%;
     }
     #borderPlay
     {
         top: 63.2%;
-        left: 20%;
+        left: 50%;
     }
     #borderStudy
     {
         top: 91.5%;
-        left: 20%;
+        left: 50%;
     }
     .border_bottom
     {
-        width: 45rem;
+        width: 20rem;
+        border-top: solid 2rem var(--Very-dark-blue);
     }
     #borderExercise
     {
-        left: 20%;
+        left: 50%;
     }
     #borderSocial
     {
-        top: 145.2%;
-        left: 20%;
+        top: 131rem;
+        left: 50%;
     }
     #borderSelfCarre
     {
-        top: 173.5%;
-        left: 20%;
+        top: 156.5rem;
+        left: 50%;
     }
 }

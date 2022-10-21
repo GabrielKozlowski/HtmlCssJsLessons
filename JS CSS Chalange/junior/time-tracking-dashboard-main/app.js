@@ -1,48 +1,68 @@
+const buttonDaily = document.getElementById("daily");
+const buttonWeekly = document.getElementById("weekly");
+const buttonMonthly = document.getElementById("monthly");
 
-//
-//   5hrs <!-- daily -->
-//   Previous - 7hrs <!-- daily -->
-//   32hrs <!-- weekly -->
-//   Previous - 36hrs <!-- weekly -->
-//   103hrs <!-- monthly -->
-//   Previous - 128hrs <!-- monthly -->
 
-//   Play
-//   1hr <!-- daily -->
-//   Previous - 2hrs <!-- daily -->
-//   10hrs <!-- weekly -->
-//   Previous - 8hrs <!-- weekly -->
-//   23hrs <!-- monthly -->
-//   Previous - 29hrs <!-- monthly -->
+const workDailyHours = document.getElementById("workDailyHours");
+const workWeeklyHours = document.getElementById("workWeeklyHours");
+const workMonthlyHours = document.getElementById("workMonthlyHours");
+const lastDayWork = document.getElementById("lastDayWork");
+const lastWeekWork = document.getElementById("lastWeekWork");
+const lastMonthWork = document.getElementById("lastMonthWork");
 
-//   Study
-//   0hrs <!-- daily -->
-//   Previous - 1hr <!-- daily -->
-//   4hrs <!-- weekly -->
-//   Previous - 7hrs <!-- weekly -->
-//   13hrs <!-- monthly -->
-//   Previous - 19hrs <!-- monthly -->
 
-//   Exercise
-//   1hr <!-- daily -->
-//   Previous - 1hr <!-- daily -->
-//   4hrs <!-- weekly -->
-//   Previous - 5hrs <!-- weekly -->
-//   11hrs <!-- monthly -->
-//   Previous - 18hrs <!-- monthly -->
+const playDailyHours = document.getElementById("playDailyHours");
+const playWeeklyHours = document.getElementById("playWeeklyHours");
+const playMonthlyHours = document.getElementById("playMonthlyHours");
+const lastDayPlay = document.getElementById("lastDayPlay");
+const lastWeekPlay = document.getElementById("lastWeekPlay");
+const lastMonthPlay = document.getElementById("lastMonthPlay");
 
-//   Social
-//   1hr <!-- daily -->
-//   Previous - 3hrs <!-- daily -->
-//   5hrs <!-- weekly -->
-//   Previous - 10hrs <!-- weekly -->
-//   21hrs <!-- monthly -->
-//   Previous - 23hrs <!-- monthly -->
 
-//   Self Care
-//   0hrs <!-- daily -->
-//   Previous - 1hr <!-- daily -->
-//   2hrs <!-- weekly -->
-//   Previous - 2hrs <!-- weekly -->
-//   7hrs monthly
- 
+const studyDailyHours = document.getElementById("studyDailyHours");
+const studyWeeklyHours = document.getElementById("studyWeeklyHours");
+const studyMonthlyHours = document.getElementById("studyMonthlyHours");
+const lastDayStudy = document.getElementById("lastDayStudy");
+const lastWeekStudy = document.getElementById("lastWeekStudy");
+const lastMonthStudy = document.getElementById("lastMonthStudy");
+
+
+const exerciseDailyHours = document.getElementById("exerciseDailyHours");
+const exerciseWeeklyHours = document.getElementById("exerciseWeeklyHours");
+const exerciseMonthlyHours = document.getElementById("exerciseMonthlyHours");
+const lastDayExercise = document.getElementById("lastDayExercise");
+const lastWeekExercise = document.getElementById("lastWeekExercise");
+const lastMonthExercise = document.getElementById("lastMonthExercise");
+
+
+const socialDailyHours = document.getElementById("socialDailyHours");
+const socialWeeklyHours = document.getElementById("socialWeeklyHours");
+const socialMonthlyHours = document.getElementById("socialMonthlyHours");
+const lastDaySocial = document.getElementById("lastDaySocial");
+const lastWeekSocial = document.getElementById("lastWeekSocial");
+const lastMonthSocial = document.getElementById("lastMonthSocial");
+
+
+const selfCareDailyHours = document.getElementById("selfCareDailyHours");
+const selfCareWeeklyHours = document.getElementById("selfCareWeeklyHours");
+const selfCareMonthlyHours = document.getElementById("selfCareMonthlyHours");
+const lastDaySelfeCare = document.getElementById("lastDaySelfeCare");
+const lastWeekSelfeCare = document.getElementById("lastWeekSelfeCare");
+const lastMonthSelfeCare = document.getElementById("lastMonthSelfeCare");
+
+
+
+const dayList = [];
+const weekList = [];
+const monthList = [];
+
+
+dayList.push(workDailyHours,playDailyHours,studyDailyHours,exerciseDailyHours,socialDailyHours,selfCareDailyHours,
+    lastDayWork,lastDayPlay,lastDayStudy,lastDayExercise,lastDaySocial,lastDaySelfeCare);
+
+weekList.push(workWeeklyHours,playWeeklyHours,studyWeeklyHours,exerciseWeeklyHours,socialWeeklyHours,
+    selfCareWeeklyHours,lastWeekWork,lastWeekPlay,lastWeekStudy,lastWeekExercise,lastWeekSocial,lastWeekSelfeCare);
+
+
+monthList.push(workMonthlyHours,playMonthlyHours,studyMonthlyHours,exerciseMonthlyHours,socialMonthlyHours,
+    selfCareMonthlyHours,lastMonthWork,lastMonthPlay,lastMonthStudy,lastMonthExercise,lastMonthSocial,lastMonthSelfeCare);
