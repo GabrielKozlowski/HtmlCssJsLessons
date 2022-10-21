@@ -24,82 +24,98 @@
             <samp class="raport">Report for</samp>
             <h3 class="user_name">Jeremy Robson</h3>
           </div>
-        <button class="daily">Daily</button>
-        <button class="weekly">Weekly</button>
-        <button class="monthly">Monthly</button>
+        <button id="daily" class="button">Daily</button>
+        <button id="weekly" class="button">Weekly</button>
+        <button id="monthly" class="button">Monthly</button>
         </div>
       </div>
     </section>
     <section class="conteners2">
-      <p class="border_top"></p>
+      <p id="borderWork" class="border_top"></p>
+      <p id="borderPlay" class="border_top"></p>
+      <p id="borderStudy" class="border_top"></p>
       <div class="top">
         <div id="contWork" class="contener">
           <img src="./images/icon-work.svg" alt="mini_logo" class="logos">
           <div id="work" class="space">
             <div class="firstLine">
-              <p>Work</p>
+              <p class="p">Work</p>
               <img id="workDots" class="dots" src="./images/icon-ellipsis.svg"/>
-            </div> 
-            <h2 id="workHours">5hrs</h2>
-            <samp class="lastWeekWork">Yesterday 7hrs</samp>
+            </div>
+            <div class="center">
+              <h2 id="workHours" class="time">5hrs</h2>
+              <samp id="lastWeekWork" class="previous">Yesterday 7hrs</samp>
+            </div>           
           </div>
         </div>
         <div id="contPlay" class="contener">
           <img src="./images/icon-play.svg" alt="mini_logo" class="logos">
           <div id="play" class="space">
             <div class="firstLine">
-              <p>Play</p>
+              <p class="p">Play</p>
               <img id="playDots" class="dots" src="./images/icon-ellipsis.svg">
-            </div> 
-            <h2 id="playHours">1hr</h2>
-            <samp class="lastWeekPlay">Yesterday 2hrs</samp>
+            </div>
+            <div class="center">
+              <h2 id="playHours" class="time">1hr</h2>
+              <samp id="lastWeekPlay" class="previous">Yesterday 2hrs</samp>  
+            </div>
           </div>
         </div>
         <div id="contStudy" class="contener">
           <img src="./images/icon-study.svg" alt="mini_logo" class="logos">
           <div id="study" class="space">
             <div class="firstLine">
-              <p>Study</p>
+              <p class="p">Study</p>
               <img id="studyDots" class="dots" src="./images/icon-ellipsis.svg">
+            </div>
+            <div class="center">
+              <h2 id="studyHours" class="time">0hrs</h2>
+              <samp id="lastWeekStudy" class="previous">Yesterday 1hr</samp>
             </div> 
-            <h2 id="studyHours">0hrs</h2>
-            <samp class="lastWeekStudy">Yesterday 1hr</samp>
           </div>
         </div>
       </div>
-      <p class="border_bottom"></p>
+      <p id="borderExercise" class="border_bottom"></p>
+      <p id="borderSocial" class="border_bottom"></p>
+      <p id="borderSelfCarre" class="border_bottom"></p>
       <div class="bottom">
         <div id="contExercise" class="contener">
           <img id="logo_exercise" src="./images/icon-exercise.svg" alt="mini_logo" class="logos">
           <div id="exercise" class="space">
             <div class="firstLine">
-              <p>Exercise</p>
+              <p class="p">Exercise</p>
               <img id="exerciseDots" class="dots" src="./images/icon-ellipsis.svg">
+            </div>
+            <div class="center">
+              <h2 id="exerciseHours" class="time">1hr</h2>
+              <samp id="lastWeekExercise" class="previous">Yesterday 1hr</samp> 
             </div> 
-            <h2 id="exerciseHours">1hr</h2>
-            <samp class="lastWeekExercise">Yesterday 1hr</samp>
           </div>
         </div>
         <div id="contSocial" class="contener">
           <img id="logo_social" src="./images/icon-social.svg" alt="mini_logo" class="logos">
           <div id="social" class="space">
             <div class="firstLine">
-              <p>Social</p>
+              <p class="p">Social</p>
               <img id="socialDots" class="dots" src="./images/icon-ellipsis.svg">
-            </div> 
-            <h2 id="socialHours">1hr</h2>
-            <samp class="lastWeekSocial">Yesterday 3hrs</samp>
+            </div>
+            <div class="center">
+              <h2 id="socialHours" class="time">1hr</h2>
+              <samp id="lastWeekSocial" class="previous">Yesterday 3hrs</samp>
+            </div>   
           </div>
         </div>
         <div id="contSelfCare" class="contener">
           <img id="logo_hart" src="./images/icon-self-care.svg" alt="mini_logo" class="logos">
           <div id="selfCare" class="space">
             <div class="firstLine">
-              <p>SelfCare</p>
+              <p class="p">SelfCare</p>
               <img id="selfCareDots" class="dots" src="./images/icon-ellipsis.svg">
+            </div>
+            <div class="center">
+              <h2 id="selfCareHours" class="time">0hrs</h2>
+              <samp id="lastWeekSelfCare" class="previous">Yesterday 1hr</samp> 
             </div> 
-            <h2 id="selfCareHours">0hrs</h2>
-            <samp class="lastWeekSelfCare">Yesterday 1hr</samp>
           </div>
         </div>
       </div>  

@@ -67,7 +67,7 @@ button
     font-size: 1.5rem;
     padding-bottom: 30px;
 }
-p
+.p
 {
     color: white;
     font-size: 2rem;
@@ -136,19 +136,44 @@ p
 
 .border_top
 {
-    width: 100%;
+    width: 23.5rem;
     border-top: solid .5rem var(--Very-dark-blue);
     position: absolute;
     margin-top: -0.5rem;
 }
+#borderWork
+{
+    left: 20.5%;
+}
+#borderPlay
+{
+    left: 41.5%;
+}
+#borderStudy
+{
+    left: 62%;
+}
 
 .border_bottom
 {
-    width: 100%;
+    width: 22.5rem;
     border-top: solid 2rem var(--Very-dark-blue);
     position: absolute;
     margin-top: 1rem;
 }
+#borderExercise
+{
+    left: 21%;
+}
+#borderSocial
+{
+    left: 42%;
+}
+#borderSelfCarre
+{
+    left: 62.5%;
+}
+
 #contUser
 {
     height: 32rem;
@@ -196,15 +221,13 @@ p
 }
 
 
-.daily
+#daily
 {
     margin-top: 11rem;
 }
 
 
-.daily:hover,
-.weekly:hover,
-.monthly:hover
+.button:hover
 {
     color: white;
 }
@@ -296,6 +319,72 @@ p
         width: 9rem;
         margin-left: 34rem;
     }
+    .logo
+    {
+        width: 25%;
+        margin-top: 10px;
+    }
+    .user
+    {
+        display: -webkit-box;
+    }
+    .raport
+    {
+        display: table-caption;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    .user_name
+    {
+        display: table-cell;
+        font-size: 3rem;
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+    }
+    .button
+    {
+        display: inline;
+        font-size: 2.6rem;
+    }
+    .p
+    {
+        font-size: 3rem;
+    }
+    .dots
+    {
+        width: 3rem;
+    }
+    .dots:hover
+    {
+        width: 4rem;
+    }
+    .center
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .time
+    {
+        font-size: 5rem;
+        margin-top: 0;
+        display: inline;
+    }
+    .previous
+    {
+        font-size: 2.2rem;
+    }
+    #daily
+    {
+        margin-right: 7rem;
+        margin-top: 0;
+    }
+    #weekly
+    {
+        margin-right: 7rem;
+    }
     #contUser
     {
         height: 17rem;
@@ -314,5 +403,43 @@ p
     }
     #selfCare {
         margin-top: -2.6rem;
+    }
+    .border_top
+    {
+        width: 45rem;
+        border-top: solid 1rem;
+    }
+    #borderWork
+    {
+        top: 34.9%;
+        left: 20%;
+    }
+    #borderPlay
+    {
+        top: 63.2%;
+        left: 20%;
+    }
+    #borderStudy
+    {
+        top: 91.5%;
+        left: 20%;
+    }
+    .border_bottom
+    {
+        width: 45rem;
+    }
+    #borderExercise
+    {
+        left: 20%;
+    }
+    #borderSocial
+    {
+        top: 145.2%;
+        left: 20%;
+    }
+    #borderSelfCarre
+    {
+        top: 173.5%;
+        left: 20%;
     }
 }
