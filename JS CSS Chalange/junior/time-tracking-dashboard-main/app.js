@@ -66,3 +66,62 @@ weekList.push(workWeeklyHours,playWeeklyHours,studyWeeklyHours,exerciseWeeklyHou
 
 monthList.push(workMonthlyHours,playMonthlyHours,studyMonthlyHours,exerciseMonthlyHours,socialMonthlyHours,
     selfCareMonthlyHours,lastMonthWork,lastMonthPlay,lastMonthStudy,lastMonthExercise,lastMonthSocial,lastMonthSelfeCare);
+
+    
+weekList.forEach(e => {
+    e.style = "display:none";
+});
+
+monthList.forEach(e => {
+    e.style = "display:none";
+});
+
+
+
+
+buttonDaily.addEventListener("click", function() 
+{
+    dayList.forEach(e => {
+        e.style = "display:block";
+    });
+
+    weekList.forEach(e => {
+        e.style = "display:none";
+    });
+
+    monthList.forEach(e => {
+        e.style = "display:none";
+    });
+})
+
+
+
+
+buttonWeekly.addEventListener("click", function() 
+{
+    weekList.forEach(e => {
+        e.style = "display:block";
+    });
+    dayList.forEach(e => {
+        e.style = "display:none";
+    });
+    monthList.forEach(e => {
+        e.style = "display:none";
+    });
+
+})
+
+
+
+buttonMonthly.addEventListener("click", function() 
+{
+    monthList.forEach(e => {
+        e.style = "display:block";
+    });
+    dayList.forEach(e => {
+        e.style = "display:none";
+    });
+    weekList.forEach(e => {
+        e.style = "display:none";
+    });
+})
